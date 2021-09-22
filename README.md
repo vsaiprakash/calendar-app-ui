@@ -10,4 +10,12 @@ Reference #1: https://angular.io/guide/universal
 
 Reference #2: https://medium.com/swlh/serverless-angular-universal-with-aws-lambda-99162975eed0
 
+Library aws-serverless-express (as used in Ref#2) is moved to @vendia/serverless-express
 
+https://www.npmjs.com/package/@vendia/serverless-express
+
+Fix to resolve if above library change causes error:  https://stackoverflow.com/questions/65446631/aws-lambda-angular-web-app-throwing-error-cannot-find-module-vendia-server
+
+-------------
+
+Need to fix the deployment stepup
