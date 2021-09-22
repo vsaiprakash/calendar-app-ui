@@ -5,3 +5,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Objective
 
 With Server-Side Rendering using Angular Universal & State Transfer API
+
+Reference: https://angular.io/guide/universal
