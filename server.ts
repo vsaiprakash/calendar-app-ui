@@ -44,9 +44,9 @@ function run(): void {
   const server = app();
 
   //Runs Express NodeJs Locally
-  server.listen(port, () => {
-    console.log(`Node Express server listening on http://localhost:${port}`);
-  });
+  // server.listen(port, () => {
+  //   console.log(`Node Express server listening on http://localhost:${port}`);
+  // });
 
 
 }
