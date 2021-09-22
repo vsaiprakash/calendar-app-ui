@@ -42,9 +42,13 @@ function run(): void {
 
   // Start up the Node server
   const server = app();
+
+  //Runs Express NodeJs Locally
   server.listen(port, () => {
     console.log(`Node Express server listening on http://localhost:${port}`);
   });
+
+
 }
 
 // Webpack will replace 'require' with '__webpack_require__'
