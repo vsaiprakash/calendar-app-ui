@@ -71,6 +71,9 @@ package:
    - e2e/**
    - coverage/**
    ##- '!src/assets/**'
+# https://stackoverflow.com/questions/65446631/aws-lambda-angular-web-app-throwing-error-cannot-find-module-vendia-server
+# aws-serverless-express has rebranded to @vendia/serverless-express
+   - '!node_modules/@vendia/**'
    - '!node_modules/aws-serverless-express/**'
    - '!node_modules/binary-case/**'
    - '!node_modules/type-is/**'
