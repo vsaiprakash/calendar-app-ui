@@ -28,6 +28,7 @@
     "express": "^4.15.2",
     "rxjs": "~6.6.0",
     "serverless": "^2.59.0",
+    "serverless-apigw-binary": "^0.4.4",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
