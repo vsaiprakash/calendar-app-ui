@@ -1,6 +1,6 @@
-const awsServerlessExpress = require('@vendia/serverless-express');
+const awsServerlessExpress = require('aws-serverless-express');//@vendia/serverless-express
 const server = require('./dist/calendar-app-ui/server');
-const awsServerlessExpressMiddleware = require('@vendia/serverless-express/middleware');
+const awsServerlessExpressMiddleware = require('aws-serverless-express/middleware');//@vendia/serverless-express
 
 server.app.use(awsServerlessExpressMiddleware.eventContext());
 
