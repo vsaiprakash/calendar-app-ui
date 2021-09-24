@@ -47,6 +47,7 @@ Thumbs.db
 # Serverless dist
 .serverless
 aws
+awscliv2.zip
 
 # npmignore
 .npmignore
