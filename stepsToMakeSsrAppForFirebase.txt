@@ -1,0 +1,22 @@
+source: https://youtu.be/k7pLxaKkHYs
+
+1]update the angular.json:
+
+2]update server.ts
+
+3]run "npm run build:ssr"
+
+4]change into dist directory with cd command
+
+5]install firebase cli at global level using 
+    npm install -g firebase-tools
+
+6]initialise firebase hosting with cmd:
+    firebase init
+
+    If running firebase cmd first time then
+        firebase login --no-localhost
+    And, give access to firebase account
+
+7]make sure an app project already created in firebase console
+
