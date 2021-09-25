@@ -11,6 +11,8 @@ source: https://youtu.be/k7pLxaKkHYs
 5]install firebase cli at global level using 
     npm install -g firebase-tools
 
+6]make sure an app project already created in firebase console
+
 6]initialise firebase hosting with cmd:
     firebase init
 
@@ -18,5 +20,12 @@ source: https://youtu.be/k7pLxaKkHYs
         firebase login --no-localhost
     And, give access to firebase account
 
-7]make sure an app project already created in firebase console
+7]select functions & hosting using spacebar and proceed with next step
+8]select the project on firebase to link current project to
 
+9]Test the current configuration using cmd:
+    firebase emulators:start
+        If it runs as expected, we can proceed with deployment.
+
+10]Deploy using cmd:
+    firebase deploy --only functions,hosting
