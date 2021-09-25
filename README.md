@@ -5,6 +5,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Live Demo Hosted on Firebase as Cloud Function
 Live Demo available at: https://calendar-app-ui-ssr.web.app/
 
+Reference: https://youtu.be/k7pLxaKkHYs
+
 ## Objective
 
 With Server-Side Rendering using Angular Universal & State Transfer API
