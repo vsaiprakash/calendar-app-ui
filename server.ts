@@ -44,9 +44,9 @@ function run(): void {
   const server = app();
 
   //Runs Express NodeJs Locally
-  // server.listen(port, () => {
-  //   console.log(`Node Express server listening on http://localhost:${port}`);
-  // });
+  server.listen(port, () => {
+    console.log(`Node Express server listening on http://localhost:${port}`);
+  });
 
 
 }
@@ -62,3 +62,6 @@ if (moduleFilename === __filename || moduleFilename.includes('iisnode')) {
 }
 
 export * from './src/main.server';
+// module.exports = {
+//   app: app
+// }

@@ -10,7 +10,8 @@
     "dev:ssr": "ng run calendar-app-ui:serve-ssr",
     "serve:ssr": "node dist/calendar-app-ui/server/main.js",
     "build:ssr": "ng build && ng run calendar-app-ui:server",
-    "prerender": "ng run calendar-app-ui:prerender"
+    "prerender": "ng run calendar-app-ui:prerender",
+    "deploy": "npm run build:ssr && serverless deploy"
   },
   "private": true,
   "dependencies": {

@@ -29,7 +29,7 @@ provider:
   lambdaHashingVersion: 20201221
   memorySize: 128
   timeout: 30
-  stage: development
+  stage: dev
   region: ap-south-1
 
 # you can overwrite defaults here
@@ -73,7 +73,7 @@ package:
    ##- '!src/assets/**'
 # https://stackoverflow.com/questions/65446631/aws-lambda-angular-web-app-throwing-error-cannot-find-module-vendia-server
 # aws-serverless-express has rebranded to @vendia/serverless-express
-  #  - '!node_modules/@vendia/**'
+   - '!node_modules/@vendia/**'
    - '!node_modules/aws-serverless-express/**'
    - '!node_modules/binary-case/**'
    - '!node_modules/type-is/**'
@@ -92,17 +92,20 @@ functions:
     events:
       - http: ANY {proxy+}
       - http: ANY /
-
+    # events:
+    #   - http:
+    #       path: /
+    #       method: get
 # functions:
 #   hello:
 #     handler: handler.hello
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
-#    events:
-#      - httpApi:
-#          path: /users/create
-#          method: get
+  #  events:
+  #    - httpApi:
+  #        path: /users/create
+  #        method: get
 #      - websocket: $connect
 #      - s3: ${env:BUCKET}
 #      - schedule: rate(10 minutes)
