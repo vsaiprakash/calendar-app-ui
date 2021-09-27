@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DeckContainerComponent } from './customComponents/deck-container/deck-container.component';
+import { CardContainerComponent } from './customComponents/card-container/card-container.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DeckContainerComponent,
+    CardContainerComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
