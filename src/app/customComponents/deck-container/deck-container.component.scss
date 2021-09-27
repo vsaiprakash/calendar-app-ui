@@ -1,4 +1,35 @@
-.deck-container-body{
+app-card-container{
+    position: absolute;
     padding: 15px;
-    height: 100vh; // makes each card screen's height
+    width: 97%;
+    height: 100vh;
 }
+
+$card-count: 4; //number of cards in deck
+
+@for $i from 0 through ($card-count - 1) {
+    .card-#{$i}{
+        z-index: -#{$i}; // -$i
+        left: calc(#{$i} * 1%); // converts $i to % value
+    }
+}
+
+// .card-0{
+//     z-index: 0;
+//     left: 0%;
+// }
+
+// .card-1{
+//     z-index: -1;
+//     left: 1%;
+// }
+
+// .card-2{
+//     z-index: -2;
+//     left: 2%;
+// }
+
+// .card-3{
+//     z-index: -3;
+//     left: 3%;
+// }
