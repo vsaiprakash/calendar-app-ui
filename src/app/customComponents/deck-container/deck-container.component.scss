@@ -12,6 +12,11 @@ $card-count: 4; //number of cards in deck
         z-index: -#{$i}; // -$i
         left: calc(#{$i} * 1%); // converts $i to % value
     }
+
+    // .card-#{$i}:hover{
+    //  // box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
+    //     box-shadow: 2px 4px 10px lightgray;
+    // }
 }
 
 // .card-0{
