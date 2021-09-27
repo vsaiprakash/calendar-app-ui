@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Live Demo Hosted on Firebase as Cloud Function
 Live Demo available at: https://calendar-app-ui-ssr.web.app/
 
-Reference: https://youtu.be/k7pLxaKkHYs
+Reference for Deployment on Firebase: https://youtu.be/k7pLxaKkHYs
 
 ## Objective
 
@@ -13,7 +13,12 @@ With Server-Side Rendering using Angular Universal & State Transfer API
 
 Reference #1: https://angular.io/guide/universal
 
-Reference #2: https://medium.com/swlh/serverless-angular-universal-with-aws-lambda-99162975eed0
+
+
+-------------
+### AWS Deployment didn't worked. Need to explore again later
+
+Reference: https://medium.com/swlh/serverless-angular-universal-with-aws-lambda-99162975eed0
 
 Library aws-serverless-express (as used in Ref#2) is moved to @vendia/serverless-express
 
