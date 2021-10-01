@@ -19,6 +19,10 @@ $card-count: 4; //number of cards in deck
     // }
 }
 
+.card-selected {
+    z-index: 0;
+}
+
 // .card-0{
 //     z-index: 0;
 //     left: 0%;

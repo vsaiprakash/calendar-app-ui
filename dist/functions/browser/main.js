@@ -98,7 +98,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cardComponents_card_container_card_container_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./cardComponents/card-container/card-container.component */ 744);
 /* harmony import */ var _views_login_login_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./views/login/login.component */ 93);
 /* harmony import */ var _pipes_dynamic_component_pipe__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pipes/dynamic-component.pipe */ 4285);
-/* harmony import */ var _cardComponents_card_directives_card_directive__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./cardComponents/card-directives/card.directive */ 319);
+/* harmony import */ var _cardComponents_card_directives_card_directive__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./cardComponents/card-directives/card.directive */ 2319);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ 2316);
 
 
@@ -163,9 +163,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "CardContainerComponent": () => (/* binding */ CardContainerComponent)
 /* harmony export */ });
-/* harmony import */ var _card_directives_card_directive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../card-directives/card.directive */ 319);
+/* harmony import */ var _card_directives_card_directive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../card-directives/card.directive */ 2319);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 2316);
-/* harmony import */ var _card_services_deck_data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../card-services/deck-data.service */ 816);
+/* harmony import */ var _card_services_deck_data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../card-services/deck-data.service */ 8816);
 
 
 
@@ -216,7 +216,7 @@ CardContainerComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MOD
 
 /***/ }),
 
-/***/ 319:
+/***/ 2319:
 /*!******************************************************************!*\
   !*** ./src/app/cardComponents/card-directives/card.directive.ts ***!
   \******************************************************************/
@@ -240,7 +240,7 @@ CardDirective.ɵdir = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["
 
 /***/ }),
 
-/***/ 809:
+/***/ 7809:
 /*!*************************************************************************!*\
   !*** ./src/app/cardComponents/card-services/deck-controller.service.ts ***!
   \*************************************************************************/
@@ -296,7 +296,7 @@ DeckControllerService.ɵprov = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MOD
 
 /***/ }),
 
-/***/ 816:
+/***/ 8816:
 /*!*******************************************************************!*\
   !*** ./src/app/cardComponents/card-services/deck-data.service.ts ***!
   \*******************************************************************/
@@ -344,30 +344,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "DeckContainerComponent": () => (/* binding */ DeckContainerComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 2316);
-/* harmony import */ var src_app_cardComponents_card_services_deck_controller_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/cardComponents/card-services/deck-controller.service */ 809);
-/* harmony import */ var _card_services_deck_data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../card-services/deck-data.service */ 816);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ 4364);
-/* harmony import */ var _card_container_card_container_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../card-container/card-container.component */ 744);
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ 202);
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 2316);
+/* harmony import */ var src_app_cardComponents_card_services_deck_controller_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/cardComponents/card-services/deck-controller.service */ 7809);
+/* harmony import */ var _card_services_deck_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../card-services/deck-data.service */ 8816);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ 4364);
+/* harmony import */ var _card_container_card_container_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../card-container/card-container.component */ 744);
+
 
 
 
 
 
 function DeckContainerComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div");
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](1, "app-card-container", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](1, "app-card-container");
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const i_r2 = ctx.index;
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassMapInterpolate1"]("card-", i_r2, "");
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("componentIndex", i_r2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵclassMapInterpolate1"]("card-", i_r2, "");
 } }
 class DeckContainerComponent {
     constructor(deckController, deckData) {
         this.deckController = deckController;
         this.deckData = deckData;
+        this.lodash = lodash__WEBPACK_IMPORTED_MODULE_0__;
         this.cards = this.deckData.getDeckData();
         this.deckController.setSizeOfDeck(this.cards.length);
         this.selectedIndex = 0;
@@ -377,19 +380,15 @@ class DeckContainerComponent {
         this.selectedIndex = 0;
     }
 }
-DeckContainerComponent.ɵfac = function DeckContainerComponent_Factory(t) { return new (t || DeckContainerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](src_app_cardComponents_card_services_deck_controller_service__WEBPACK_IMPORTED_MODULE_0__.DeckControllerService), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_card_services_deck_data_service__WEBPACK_IMPORTED_MODULE_1__.DeckDataService)); };
-DeckContainerComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: DeckContainerComponent, selectors: [["app-deck-container"]], decls: 3, vars: 5, consts: [[1, "deck-container-body", "col-sm-12"], [4, "ngFor", "ngForOf"], [3, "componentIndex"]], template: function DeckContainerComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, DeckContainerComponent_div_1_Template, 2, 4, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](2, "app-card-container", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+DeckContainerComponent.ɵfac = function DeckContainerComponent_Factory(t) { return new (t || DeckContainerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](src_app_cardComponents_card_services_deck_controller_service__WEBPACK_IMPORTED_MODULE_1__.DeckControllerService), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_card_services_deck_data_service__WEBPACK_IMPORTED_MODULE_2__.DeckDataService)); };
+DeckContainerComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({ type: DeckContainerComponent, selectors: [["app-deck-container"]], decls: 2, vars: 1, consts: [[1, "deck-container-body", "col-sm-12"], [4, "ngFor", "ngForOf"]], template: function DeckContainerComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](1, DeckContainerComponent_div_1_Template, 2, 3, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngForOf", ctx.cards);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassMapInterpolate1"]("card-", ctx.selectedIndex, "");
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("componentIndex", ctx.selectedIndex);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__.NgForOf, _card_container_card_container_component__WEBPACK_IMPORTED_MODULE_2__.CardContainerComponent], styles: ["app-card-container[_ngcontent-%COMP%] {\n  position: absolute;\n  padding: 15px;\n  width: 97%;\n  height: 100vh;\n}\n\n.card-0[_ngcontent-%COMP%] {\n  z-index: -0;\n  left: calc(0 * 1%);\n}\n\n.card-1[_ngcontent-%COMP%] {\n  z-index: -1;\n  left: calc(1 * 1%);\n}\n\n.card-2[_ngcontent-%COMP%] {\n  z-index: -2;\n  left: calc(2 * 1%);\n}\n\n.card-3[_ngcontent-%COMP%] {\n  z-index: -3;\n  left: calc(3 * 1%);\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlY2stY29udGFpbmVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQUE7RUFDQSxhQUFBO0VBQ0EsVUFBQTtFQUNBLGFBQUE7QUFDSjs7QUFLSTtFQUNJLFdBQUE7RUFDQSxrQkFBQTtBQUZSOztBQUFJO0VBQ0ksV0FBQTtFQUNBLGtCQUFBO0FBR1I7O0FBTEk7RUFDSSxXQUFBO0VBQ0Esa0JBQUE7QUFRUjs7QUFWSTtFQUNJLFdBQUE7RUFDQSxrQkFBQTtBQWFSIiwiZmlsZSI6ImRlY2stY29udGFpbmVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYXBwLWNhcmQtY29udGFpbmVye1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBwYWRkaW5nOiAxNXB4O1xuICAgIHdpZHRoOiA5NyU7XG4gICAgaGVpZ2h0OiAxMDB2aDtcbn1cblxuJGNhcmQtY291bnQ6IDQ7IC8vbnVtYmVyIG9mIGNhcmRzIGluIGRlY2tcblxuQGZvciAkaSBmcm9tIDAgdGhyb3VnaCAoJGNhcmQtY291bnQgLSAxKSB7XG4gICAgLmNhcmQtI3skaX17XG4gICAgICAgIHotaW5kZXg6IC0jeyRpfTsgLy8gLSRpXG4gICAgICAgIGxlZnQ6IGNhbGMoI3skaX0gKiAxJSk7IC8vIGNvbnZlcnRzICRpIHRvICUgdmFsdWVcbiAgICB9XG5cbiAgICAvLyAuY2FyZC0jeyRpfTpob3ZlcntcbiAgICAvLyAgLy8gYm94LXNoYWRvdzogbm9uZXxoLW9mZnNldCB2LW9mZnNldCBibHVyIHNwcmVhZCBjb2xvciB8aW5zZXR8aW5pdGlhbHxpbmhlcml0O1xuICAgIC8vICAgICBib3gtc2hhZG93OiAycHggNHB4IDEwcHggbGlnaHRncmF5O1xuICAgIC8vIH1cbn1cblxuLy8gLmNhcmQtMHtcbi8vICAgICB6LWluZGV4OiAwO1xuLy8gICAgIGxlZnQ6IDAlO1xuLy8gfVxuXG4vLyAuY2FyZC0xe1xuLy8gICAgIHotaW5kZXg6IC0xO1xuLy8gICAgIGxlZnQ6IDElO1xuLy8gfVxuXG4vLyAuY2FyZC0ye1xuLy8gICAgIHotaW5kZXg6IC0yO1xuLy8gICAgIGxlZnQ6IDIlO1xuLy8gfVxuXG4vLyAuY2FyZC0ze1xuLy8gICAgIHotaW5kZXg6IC0zO1xuLy8gICAgIGxlZnQ6IDMlO1xuLy8gfSJdfQ== */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngForOf", ctx.lodash.range(2));
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__.NgForOf, _card_container_card_container_component__WEBPACK_IMPORTED_MODULE_3__.CardContainerComponent], styles: ["app-card-container[_ngcontent-%COMP%] {\n  position: absolute;\n  padding: 15px;\n  width: 97%;\n  height: 100vh;\n}\n\n.card-0[_ngcontent-%COMP%] {\n  z-index: -0;\n  left: calc(0 * 1%);\n}\n\n.card-1[_ngcontent-%COMP%] {\n  z-index: -1;\n  left: calc(1 * 1%);\n}\n\n.card-2[_ngcontent-%COMP%] {\n  z-index: -2;\n  left: calc(2 * 1%);\n}\n\n.card-3[_ngcontent-%COMP%] {\n  z-index: -3;\n  left: calc(3 * 1%);\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRlY2stY29udGFpbmVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQUE7RUFDQSxhQUFBO0VBQ0EsVUFBQTtFQUNBLGFBQUE7QUFDSjs7QUFLSTtFQUNJLFdBQUE7RUFDQSxrQkFBQTtBQUZSOztBQUFJO0VBQ0ksV0FBQTtFQUNBLGtCQUFBO0FBR1I7O0FBTEk7RUFDSSxXQUFBO0VBQ0Esa0JBQUE7QUFRUjs7QUFWSTtFQUNJLFdBQUE7RUFDQSxrQkFBQTtBQWFSIiwiZmlsZSI6ImRlY2stY29udGFpbmVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYXBwLWNhcmQtY29udGFpbmVye1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBwYWRkaW5nOiAxNXB4O1xuICAgIHdpZHRoOiA5NyU7XG4gICAgaGVpZ2h0OiAxMDB2aDtcbn1cblxuJGNhcmQtY291bnQ6IDQ7IC8vbnVtYmVyIG9mIGNhcmRzIGluIGRlY2tcblxuQGZvciAkaSBmcm9tIDAgdGhyb3VnaCAoJGNhcmQtY291bnQgLSAxKSB7XG4gICAgLmNhcmQtI3skaX17XG4gICAgICAgIHotaW5kZXg6IC0jeyRpfTsgLy8gLSRpXG4gICAgICAgIGxlZnQ6IGNhbGMoI3skaX0gKiAxJSk7IC8vIGNvbnZlcnRzICRpIHRvICUgdmFsdWVcbiAgICB9XG5cbiAgICAvLyAuY2FyZC0jeyRpfTpob3ZlcntcbiAgICAvLyAgLy8gYm94LXNoYWRvdzogbm9uZXxoLW9mZnNldCB2LW9mZnNldCBibHVyIHNwcmVhZCBjb2xvciB8aW5zZXR8aW5pdGlhbHxpbmhlcml0O1xuICAgIC8vICAgICBib3gtc2hhZG93OiAycHggNHB4IDEwcHggbGlnaHRncmF5O1xuICAgIC8vIH1cbn1cblxuLy8gLmNhcmQtMHtcbi8vICAgICB6LWluZGV4OiAwO1xuLy8gICAgIGxlZnQ6IDAlO1xuLy8gfVxuXG4vLyAuY2FyZC0xe1xuLy8gICAgIHotaW5kZXg6IC0xO1xuLy8gICAgIGxlZnQ6IDElO1xuLy8gfVxuXG4vLyAuY2FyZC0ye1xuLy8gICAgIHotaW5kZXg6IC0yO1xuLy8gICAgIGxlZnQ6IDIlO1xuLy8gfVxuXG4vLyAuY2FyZC0ze1xuLy8gICAgIHotaW5kZXg6IC0zO1xuLy8gICAgIGxlZnQ6IDMlO1xuLy8gfSJdfQ== */"] });
 
 
 /***/ }),
@@ -450,7 +449,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "LoginComponent": () => (/* binding */ LoginComponent)
 /* harmony export */ });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 2316);
-/* harmony import */ var src_app_cardComponents_card_services_deck_controller_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/cardComponents/card-services/deck-controller.service */ 809);
+/* harmony import */ var src_app_cardComponents_card_services_deck_controller_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/cardComponents/card-services/deck-controller.service */ 7809);
 
 
 class LoginComponent {

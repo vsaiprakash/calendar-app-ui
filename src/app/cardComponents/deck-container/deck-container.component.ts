@@ -5,6 +5,8 @@ import { LoginComponent } from 'src/app/views/login/login.component';
 import { CardDirective } from '../card-directives/card.directive';
 import { DeckDataService } from '../card-services/deck-data.service';
 
+import * as _ from "lodash";
+
 @Component({
   selector: 'app-deck-container',
   templateUrl: './deck-container.component.html',
@@ -14,10 +16,12 @@ export class DeckContainerComponent implements OnInit {
 
   cards: any[];
   selectedIndex: number;
+  lodash: any;
 
   constructor(
     private deckController: DeckControllerService,
     private deckData: DeckDataService) {
+      this.lodash = _;
       this.cards = this.deckData.getDeckData();
       this.deckController.setSizeOfDeck(this.cards.length);
       this.selectedIndex = 0;

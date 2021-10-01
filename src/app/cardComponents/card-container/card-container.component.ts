@@ -22,11 +22,18 @@ export class CardContainerComponent implements OnInit, AfterViewChecked, AfterVi
     private viewContainerRef: ViewContainerRef) {
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if(this.componentIndex==undefined){
+      this.componentIndex = -1;
+    }
+  }
 
   ngAfterViewInit() {
     // viewChild is set after the view has been initialized
-    this.loadComponent();
+    if(this.componentIndex!=undefined && this.componentIndex!=-1){
+      //load component only if it is selected card
+      this.loadComponent();
+    }
   }
 
   ngAfterViewChecked() {
@@ -35,12 +42,9 @@ export class CardContainerComponent implements OnInit, AfterViewChecked, AfterVi
   }
 
   loadComponent() {
-    console.log("Loading I: "+this.componentIndex);
     const componentItem = this.deckData.getDeckDataAt(this.componentIndex)
 
     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(componentItem.component);
-
-    console.log(componentItem);
 
     // const viewContainerRef = this.viewContainerRef;
     // // viewContainerRef.clear();

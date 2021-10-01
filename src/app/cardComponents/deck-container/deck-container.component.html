@@ -1,11 +1,22 @@
 <div class="deck-container-body col-sm-12">
-    <div *ngFor="let card of cards; let i = index">
+    <div *ngFor="let number of lodash.range(4); let i=index">
+        <div *ngIf="i!=selectedIndex">
+            <app-card-container class="card-{{i}}">
+            </app-card-container>
+        </div>
+        <div *ngIf="i==selectedIndex">
+            <app-card-container class="card-{{i}}" [componentIndex]=selectedIndex>
+            </app-card-container>
+        </div>
+    </div>
+
+    <!-- <div *ngFor="let card of cards; let i = index">
         <app-card-container class="card-{{i}}" [componentIndex]=i>
         </app-card-container>
     </div>
 
     <app-card-container class="card-{{selectedIndex}}" [componentIndex]=selectedIndex>
-    </app-card-container>
+    </app-card-container> -->
 
     <!-- <app-card-container class="card-0">
         <app-login></app-login>
