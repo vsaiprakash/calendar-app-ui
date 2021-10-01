@@ -4,10 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { DeckContainerComponent } from './customComponents/deck-container/deck-container.component';
-import { CardContainerComponent } from './customComponents/card-container/card-container.component';
+import { DeckContainerComponent } from './cardComponents/deck-container/deck-container.component';
+import { CardContainerComponent } from './cardComponents/card-container/card-container.component';
 import { LoginComponent } from './views/login/login.component';
 import { DynamicComponentPipe } from './pipes/dynamic-component.pipe';
+import { CardDirective } from './cardComponents/directives/card.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DynamicComponentPipe } from './pipes/dynamic-component.pipe';
     DeckContainerComponent,
     CardContainerComponent,
     LoginComponent,
-    DynamicComponentPipe
+    DynamicComponentPipe,
+    CardDirective
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
