@@ -1,6 +1,6 @@
 import { AfterViewChecked, AfterViewInit, Component, ComponentFactoryResolver, Input, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
-import { CardDirective } from '../directives/card.directive';
-import { DeckDataService } from '../services/deck-data.service';
+import { CardDirective } from '../card-directives/card.directive';
+import { DeckDataService } from '../card-services/deck-data.service';
 
 @Component({
   selector: 'app-card-container',

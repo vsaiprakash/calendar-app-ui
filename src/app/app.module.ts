@@ -8,7 +8,7 @@ import { DeckContainerComponent } from './cardComponents/deck-container/deck-con
 import { CardContainerComponent } from './cardComponents/card-container/card-container.component';
 import { LoginComponent } from './views/login/login.component';
 import { DynamicComponentPipe } from './pipes/dynamic-component.pipe';
-import { CardDirective } from './cardComponents/directives/card.directive';
+import { CardDirective } from './cardComponents/card-directives/card.directive';
 
 @NgModule({
   declarations: [
