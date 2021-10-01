@@ -11,6 +11,7 @@ export class DeckControllerService {
 
   //[0,1,2] => 3 cards in deck
   //[0] => 1 card in deck
+  // 0 to n-1 are the cards in deck
   private sizeOfDeck: number;
 
   constructor() {
@@ -29,8 +30,9 @@ export class DeckControllerService {
 
   moveToNextCard(){
     let currCardValue = this.currVisibleCardSubject.getValue();
-    if(currCardValue + 1 <= this.sizeOfDeck){
+    if(currCardValue + 1 < this.sizeOfDeck){
       //next card is valid
+      console.log("Valid Next Operation");
       this.currVisibleCardSubject.next(currCardValue + 1)
     }
     else{
@@ -41,8 +43,9 @@ export class DeckControllerService {
 
   moveToPreviousCard(){
     let currCardValue = this.currVisibleCardSubject.getValue();
-    if(currCardValue - 1 >= 1 && currCardValue - 1 <= this.sizeOfDeck){
+    if(currCardValue - 1 >= 0 && currCardValue - 1 < this.sizeOfDeck){
       //next card is valid
+      console.log("Valid Back Operation");
       this.currVisibleCardSubject.next(currCardValue - 1)
     }
     else{
