@@ -20,6 +20,7 @@ export class LoginComponent implements OnInit, CardComponentInterface {
   }
 
   goToPreviousCard(){
+    console.log("Back clicked !");
     this.deckController.moveToPreviousCard();
   }
 

@@ -47,7 +47,7 @@ export class DeckControllerService {
     }
     else{
       //throw error that there is no next card available
-      console.log("Error! Next card is not available")
+      console.log("Error! Previous card is not available")
     }
   }
 }

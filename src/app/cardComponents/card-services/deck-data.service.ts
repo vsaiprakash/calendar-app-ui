@@ -12,7 +12,9 @@ export class DeckDataService {
   constructor() {
     this.data = [
       new Card ("login-state", LoginComponent),
-      new Card ("second-state", LoginComponent)
+      new Card ("second-state", LoginComponent),
+      new Card ("third-state", LoginComponent),
+      new Card ("forth-state", LoginComponent)
     ]
   }
 
