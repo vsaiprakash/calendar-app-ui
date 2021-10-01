@@ -9,9 +9,15 @@ import { DeckControllerService } from 'src/app/services/deck-controller.service'
 export class DeckContainerComponent implements OnInit {
 
   cards: any[];
+  index: number = 0;
 
   constructor(private deckController: DeckControllerService) {
-    this.cards = []
+    this.cards = [
+      "app-login",
+      "app-login",
+      "app-login",
+      "app-login"
+    ]
     this.deckController.setSizeOfDeck(this.cards.length);
   }
 

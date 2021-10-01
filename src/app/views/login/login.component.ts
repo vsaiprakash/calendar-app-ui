@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CardComponentInterface } from 'src/app/interfaces/card-component-interface';
 import { DeckControllerService } from 'src/app/services/deck-controller.service';
 
 @Component({
