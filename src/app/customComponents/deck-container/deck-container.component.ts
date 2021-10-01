@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DeckControllerService } from 'src/app/services/deck-controller.service';
 
 @Component({
   selector: 'app-deck-container',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeckContainerComponent implements OnInit {
 
-  constructor() { }
+  cards: any[];
+
+  constructor(private deckController: DeckControllerService) {
+    this.cards = []
+    this.deckController.setSizeOfDeck(this.cards.length);
+  }
 
   ngOnInit(): void {
   }

@@ -1,6 +1,11 @@
 <div class="deck-container-body col-sm-12">
+    <div *ngFor="let card of cards; let i = index">
+
+    </div>
+
+
     <app-card-container class="card-0">
-        <b>Login</b>
+        <app-login></app-login>
     </app-card-container>
     <app-card-container class="card-1">
         <b>Calendar</b>
