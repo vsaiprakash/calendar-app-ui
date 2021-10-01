@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { CalendarComponent } from 'src/app/views/calendar/calendar.component';
 import { LoginComponent } from 'src/app/views/login/login.component';
 import { Card } from '../card-component';
 
@@ -11,8 +12,8 @@ export class DeckDataService {
 
   constructor() {
     this.data = [
-      new Card ("login-state", LoginComponent),
-      new Card ("second-state", LoginComponent),
+      new Card ("login", LoginComponent),
+      new Card ("calendar", CalendarComponent),
       new Card ("third-state", LoginComponent),
       new Card ("forth-state", LoginComponent)
     ]

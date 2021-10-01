@@ -1,14 +1,24 @@
 <div class="deck-container-body col-sm-12">
-    <div *ngFor="let number of lodash.range(4); let i=index">
-        <div *ngIf="i!=selectedIndex">
+    <!-- Lodash.range() used to create a dummy array -->
+    <ng-container *ngFor="let number of lodash.range(4); let i=index">
+        <!-- <div *ngIf="i!=selectedIndex">
             <app-card-container class="card-{{i}}">
             </app-card-container>
         </div>
         <div *ngIf="i==selectedIndex">
             <app-card-container class="card-{{i}} card-selected" [componentIndex]=selectedIndex>
             </app-card-container>
-        </div>
-    </div>
+        </div> -->
+        <!-- Using ng-container to avoid divs -->
+        <ng-container *ngIf="i!=selectedIndex">
+            <app-card-container class="card-{{i}}">
+            </app-card-container>
+        </ng-container>
+        <ng-container *ngIf="i==selectedIndex">
+            <app-card-container class="card-{{i}} card-selected" [componentIndex]=selectedIndex>
+            </app-card-container>
+        </ng-container>
+    </ng-container>
 
     <!-- <div *ngFor="let card of cards; let i = index">
         <app-card-container class="card-{{i}}" [componentIndex]=i>
