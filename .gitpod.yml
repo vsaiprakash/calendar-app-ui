@@ -1,2 +1,3 @@
 tasks:
   - before: npm install -g @angular/cli
+  - before: npm install -g firebase-tools
