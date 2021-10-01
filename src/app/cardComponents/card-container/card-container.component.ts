@@ -11,7 +11,8 @@ export class CardContainerComponent implements OnInit, AfterViewChecked, AfterVi
 
   index: number = 0;
 
-  @ViewChild(CardDirective, {static: true}) appCard!: CardDirective;
+  @ViewChild(CardDirective) appCard: CardDirective;
+//@ViewChild(CardDirective, {static: true}) appCard!: CardDirective;
 
   @Input('componentIndex')
   componentIndex: number;
