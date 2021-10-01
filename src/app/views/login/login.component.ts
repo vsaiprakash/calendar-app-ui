@@ -15,6 +15,7 @@ export class LoginComponent implements OnInit, CardComponentInterface {
   }
 
   goToNextCard(){
+    console.log("Next clicked !");
     this.deckController.moveToNextCard();
   }
 

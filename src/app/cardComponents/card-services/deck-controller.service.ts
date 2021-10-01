@@ -15,7 +15,7 @@ export class DeckControllerService {
 
   constructor() {
     this.sizeOfDeck = 1;
-    this.currVisibleCardSubject = new BehaviorSubject(1);
+    this.currVisibleCardSubject = new BehaviorSubject(0);
     this.$currVisibleCard = this.currVisibleCardSubject.asObservable()
   }
 
