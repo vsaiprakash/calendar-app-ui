@@ -17,6 +17,7 @@ import { environment } from 'src/environments/environment';
 export function app(): express.Express {
   const server = express();
 
+  //when deployed the current directory will be in ...functions/.
   const websiteFileLocation = environment.production? "browser":"dist/functions/browser";
 
   const distFolder = join(process.cwd(), websiteFileLocation);

@@ -29,3 +29,13 @@ source: https://youtu.be/k7pLxaKkHYs
 
 10]Deploy using cmd:
     firebase deploy --only functions,hosting
+
+
+Known issues:
+[ https://stackoverflow.com/questions/46822801/firebase-deploy-error-cannot-find-module-firebase-admin ]
+[ https://status.firebase.google.com/incident/Functions/17024 ]
+
+sometimes firebase-functions & firebase-admin will be missing in functions/ folder, we need to manually install these
+    npm i firebase-functions
+    npm i firebase-admin
+
