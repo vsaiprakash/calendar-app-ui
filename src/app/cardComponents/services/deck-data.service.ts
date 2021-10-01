@@ -7,18 +7,18 @@ import { Card } from '../card-component';
 })
 export class DeckDataService {
 
+  data: any = [
+    new Card (LoginComponent, { }),
+    new Card (LoginComponent, { })
+  ];
+
   constructor() { }
 
   getDeckData(){
-    return [
-      new Card (LoginComponent, {
-        name: 'Bombasto',
-        bio: 'Brave as they come',
-      }),
-      new Card (LoginComponent, {
-        name: 'Bombasto',
-        bio: 'Brave as they come',
-      })
-    ];
+    return this.data;
+  }
+
+  getDeckDataAt(index: number){
+    return this.data[index];
   }
 }
