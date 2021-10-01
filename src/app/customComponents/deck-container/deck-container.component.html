@@ -1,7 +1,11 @@
 <div class="deck-container-body col-sm-12">
     <div *ngFor="let card of cards; let i = index">
         <app-card-container class="card-{{i}}">
-            <app-login></app-login>
+            {{card | dynamicComponent}}
+            <!-- <app-login></app-login> -->
+
+            <!-- "<" + {{card}} + "></ " + {{card}} + ">" -->
+            <!-- {{< card ></ card >}} -->
         </app-card-container>
     </div>
 

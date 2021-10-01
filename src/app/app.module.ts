@@ -7,13 +7,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DeckContainerComponent } from './customComponents/deck-container/deck-container.component';
 import { CardContainerComponent } from './customComponents/card-container/card-container.component';
 import { LoginComponent } from './views/login/login.component';
+import { DynamicComponentPipe } from './pipes/dynamic-component.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     DeckContainerComponent,
     CardContainerComponent,
-    LoginComponent
+    LoginComponent,
+    DynamicComponentPipe
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
