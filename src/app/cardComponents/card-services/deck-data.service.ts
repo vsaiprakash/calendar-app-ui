@@ -13,7 +13,9 @@ export class DeckDataService {
   constructor() {
     this.data = [
       new Card ("login", LoginComponent),
-      new Card ("calendar", CalendarComponent),
+      new Card ("calendar", CalendarComponent, {
+        month: 9, year: 2021
+      }),
       new Card ("third-state", LoginComponent),
       new Card ("forth-state", LoginComponent)
     ]

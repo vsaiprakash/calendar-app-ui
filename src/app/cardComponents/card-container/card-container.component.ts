@@ -1,4 +1,5 @@
-import { AfterViewChecked, AfterViewInit, Component, ComponentFactoryResolver, Input, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { AfterViewChecked, AfterViewInit, ChangeDetectorRef, Component, ComponentFactoryResolver, Input, OnInit, Type, ViewChild, ViewContainerRef } from '@angular/core';
+import { CalendarComponent } from 'src/app/views/calendar/calendar.component';
 import { CardDirective } from '../card-directives/card.directive';
 import { DeckDataService } from '../card-services/deck-data.service';
 
@@ -58,8 +59,16 @@ export class CardContainerComponent implements OnInit, AfterViewChecked, AfterVi
     // viewContainerRef.clear();
 
     const componentRef = viewContainerRef.createComponent<any>(componentFactory);
+    // componentRef.instance.data = componentItem.data;
 
-    componentRef.instance.data = componentItem.data;
+    console.log(componentFactory.componentType.name);
+    // this.changeDetectorRef.markForCheck();
+    // if(componentFactory.componentType.name == CalendarComponent.name){
+    //   console.log("Calendar Component is loaded");
+    //   componentRef.instance.month = componentItem.data.month;
+    //   componentRef.instance.year = componentItem.data.year;
+    // }
+
   }
 
 }

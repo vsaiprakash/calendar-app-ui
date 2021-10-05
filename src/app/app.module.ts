@@ -10,6 +10,7 @@ import { LoginComponent } from './views/login/login.component';
 import { DynamicComponentPipe } from './pipes/dynamic-component.pipe';
 import { CardDirective } from './cardComponents/card-directives/card.directive';
 import { CalendarComponent } from './views/calendar/calendar.component';
+import { CalendarTableComponent } from './customComponents/calendar-table/calendar-table.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CalendarComponent } from './views/calendar/calendar.component';
     LoginComponent,
     DynamicComponentPipe,
     CardDirective,
-    CalendarComponent
+    CalendarComponent,
+    CalendarTableComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
