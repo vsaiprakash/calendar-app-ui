@@ -11,6 +11,7 @@ import { DynamicComponentPipe } from './pipes/dynamic-component.pipe';
 import { CardDirective } from './cardComponents/card-directives/card.directive';
 import { CalendarComponent } from './views/calendar/calendar.component';
 import { CalendarTableComponent } from './customComponents/calendar-table/calendar-table.component';
+import { ViewContainerComponent } from './view-container/view-container.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CalendarTableComponent } from './customComponents/calendar-table/calend
     DynamicComponentPipe,
     CardDirective,
     CalendarComponent,
-    CalendarTableComponent
+    CalendarTableComponent,
+    ViewContainerComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

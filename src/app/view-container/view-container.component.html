@@ -1,0 +1,16 @@
+<div class="view-container">
+    <div class="card shadow-sm p-3 mb-5 bg-white rounded">
+        <h3></h3>
+        <router-outlet></router-outlet>
+        <p>view-container works!</p>
+
+        <div class="view-controller-btn btn-group btn-group-toggle" data-toggle="buttons">
+            <button type="button" class="btn btn-outline-primary" (click)="goToPreviousView()">
+                Back
+            </button>
+            <button type="button" class="btn btn-outline-primary" (click)="goToNextView()">
+                Next
+            </button>
+        </div>
+    </div>
+</div>
